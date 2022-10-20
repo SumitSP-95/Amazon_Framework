@@ -12,6 +12,7 @@ public class Demo_class_student {
 		System.out.println("hey all sunny here iam add in new project ");
 		System.out.println("checking status");
 		System.out.println("new status");
+		System.out.println("new one");
 	}
 	
 }
