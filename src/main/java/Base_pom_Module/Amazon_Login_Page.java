@@ -13,6 +13,7 @@ public class Amazon_Login_Page {
 		
 		Reporter.log("Launching amazon",true);
 		Reporter.log("Launching amazon",true);
+		Reporter.log("Study Amazon",true);
 	}
 	
 }
