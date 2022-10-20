@@ -17,6 +17,7 @@ public class Demo_class_student {
 		System.out.println("last one added");
 		System.out.println("some silly mistakes");
 		System.out.println("abcd");
+		System.out.println("zzz");
 	}
 	
 }
