@@ -9,17 +9,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 
+import Base_pom_Module.Amazon_Login_Page;
+
 
 
 public class Base_class {
 	
 	public static WebDriver driver;
-	public static Amazon_login amazon_login;
+	public static Amazon_Login_Page amazon_login_page;
 	
 	
 	public static void Initialize() {
 		
-		amazon_login = new Amazon_login(driver);
+		amazon_login_page = new Amazon_Login_Page(driver);
 		
 	}
 	
@@ -38,32 +40,34 @@ public class Base_class {
 	}
 	public static void Launch_Browser(String Browser_Name) throws IOException {
 		
-		switch (Browser_Name) {
-		case "Chrome":
+		if (Browser_Name.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver", "D:\\Automation Tools\\Drivers\\chromedriver_win32 (1)\\chromedriver.exe");
-			
+			Reporter.log("Launching Browser Chrome",true);
 			driver = new ChromeDriver();
-			break;
-		case "FireFox":
+		}else if(Browser_Name.equals("Firefox")) {
 			System.setProperty("webdriver.gecko.driver","D:\\Automation Tools\\Drivers\\geckodriver-v0.31.0-win64\\geckodriver.exe");
-			
+			Reporter.log("Launching Browser FireFox",true);
 			driver = new FirefoxDriver();
-			break;
-		default:
+		}else {
 			Reporter.log("No browser found with given name = "+Browser_Name,true);
-			break;
 		}
 		driver.manage().window().maximize();
 		driver.get(getpropertyvalue("URL"));
 
 	}
 	public static void Quite_Browser() throws InterruptedException {
-		Thread.sleep(5000);
+		Static_wait(5);
 		driver.quit();
 	}
 	
 	public static void Static_wait(int sec) throws InterruptedException {
-		Thread.sleep(sec*1000);
+		try {
+			Thread.sleep(sec*1000);
+		} catch (Exception e) {
+			// TODO: handle exception
+			Reporter.log("Unable to Wait",true);
+		}
+		
 	}
 	
 }
