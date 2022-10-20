@@ -13,6 +13,7 @@ public class Demo_class_student {
 		System.out.println("checking status");
 		System.out.println("new status");
 		System.out.println("new one");
+		System.out.println("Hi gopal");
 	}
 	
 }
