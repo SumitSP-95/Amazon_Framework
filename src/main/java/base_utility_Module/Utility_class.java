@@ -11,26 +11,26 @@ import org.openqa.selenium.WebDriver;
 
 public class Utility_class {
 
-	WebDriver driver;
-	public Utility_class(WebDriver _driver) {
-		driver = _driver;
-	}
-	
-	
-	public String Get_deta(int Row_Ind,int Column_Ind) throws EncryptedDocumentException, IOException {
+	public class Utility_Class {
+		WebDriver driver;
 		
-		FileInputStream DCTC = new FileInputStream("C:\\Users\\Gopal\\Desktop\\Excle1\\Gopal.xlxe");
-	    
-		Sheet Amazon = WorkbookFactory.create(DCTC).getSheet("Amazon");
-		
-		Cell cell_Info = Amazon. getRow(Row_Ind).getCell(Column_Ind);
-		
-		try {
-			return cell_Info.getStringCellValue();
-		} catch (Exception e) {
-			return cell_Info.getNumericCellValue()+"";
+		public Utility_Class(WebDriver _driver) {
+			driver = _driver;
 		}
 		
+		public String Get_Excel_Data(int Row_Ind,int Cell_ind) throws EncryptedDocumentException, IOException {
+			
+			FileInputStream File = new FileInputStream("C:\\Users\\Gopal\\Desktop\\Excle1\\Gopal.xlsx");
+			
+			 Sheet sheet = WorkbookFactory.create(File).getSheet("Amazon");
+			 
+			 Cell cell = sheet.getRow(Row_Ind).getCell(Cell_ind);
+			 
+			 try {
+				return cell.getStringCellValue();
+			 }catch (Exception e) {
+				return (int)cell.getNumericCellValue()+"";
+			 }
+		}
 	}
-	
 }
