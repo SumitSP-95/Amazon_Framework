@@ -28,11 +28,15 @@ public class Demo_class_student {
 
 		System.out.println("some silly mistakes");
 		System.out.println("abcd");
+<<<<<<< HEAD
+		System.out.println("zzz");
+=======
 		System.out.println("...........Block coded..........");
 		System.out.println("...........Block coded..........");
 		
 		
 
+>>>>>>> branch 'master' of https://github.com/SumitSP-95/Amazon_Framework
 	}
 	
 }
