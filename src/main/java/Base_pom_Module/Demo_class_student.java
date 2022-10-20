@@ -22,13 +22,16 @@ public class Demo_class_student {
 		System.out.println("new one");
 		System.out.println("Hi gopal");
 		System.out.println("last one added");
-<<<<<<< HEAD
+
 		System.out.println("Sumit pawankar");
 
-=======
+
 		System.out.println("some silly mistakes");
 		System.out.println("abcd");
->>>>>>> branch 'master' of https://github.com/SumitSP-95/Amazon_Framework.git
+		System.out.println("...........Block coded..........");
+		
+		
+
 	}
 	
 }
