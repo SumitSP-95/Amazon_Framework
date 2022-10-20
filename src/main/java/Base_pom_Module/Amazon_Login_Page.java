@@ -38,4 +38,5 @@ public class Amazon_Login_Page {
 		Sign_up_now_PageOpen.click();
 	}
 
+	
 }
