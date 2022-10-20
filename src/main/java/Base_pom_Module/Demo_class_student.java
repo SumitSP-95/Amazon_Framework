@@ -6,8 +6,14 @@ public class Demo_class_student {
 	public static void main(String[] args) {
 		
 		System.out.println("This is new project according to Amazon");
+
 		System.out.println("Amazon project");
 		System.out.println("i am sumit");
+
+		System.out.println("i added in project");
+		System.out.println("I am add in new project");
+		System.out.println(".............");
+
 	}
 	
 }
