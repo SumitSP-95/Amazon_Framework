@@ -41,7 +41,7 @@ public class Base_class {
 	public static void Launch_Browser(String Browser_Name) throws IOException {
 		
 		if (Browser_Name.equals("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Automation Tools\\Drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Automation tools\\Driver\\chromedriver_win32 (1)\\chromedriver.exe");
 			Reporter.log("Launching Browser Chrome",true);
 			driver = new ChromeDriver();
 		}else if(Browser_Name.equals("Firefox")) {
