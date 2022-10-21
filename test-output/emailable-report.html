@@ -9,16 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">49</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">90</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m0">Initial_Activity</a></td><td rowspan="1">1666314646293</td><td rowspan="1">5</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m1">Terminate_Activity</a></td><td rowspan="1">1666314646316</td><td rowspan="1">-1666314646316</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m2">Amazon_Welcome_Text_validation</a></td><td rowspan="1">1666314646312</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m0">Initial_Activity</a></td><td rowspan="1">1666315193031</td><td rowspan="1">51</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m1">Terminate_Activity</a></td><td rowspan="1">1666315193102</td><td rowspan="1">-1666315193102</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">base_test_Module.Login_Page_Validation</td><td><a href="#m2">Amazon_Welcome_Text_validation</a></td><td rowspan="1">1666315193097</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">base_test_Module.Login_Page_Validation#Initial_Activity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+<h2>Default test</h2><h3 id="m0">base_test_Module.Login_Page_Validation#Initial_Activity</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Launching Browser Chrome</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -48,12 +52,16 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">base_test_Module.Login_Page_Validation#Terminate_Activity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">base_test_Module.Login_Page_Validation#Amazon_Welcome_Text_validation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+<h3 id="m2">base_test_Module.Login_Page_Validation#Amazon_Welcome_Text_validation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[Launching Browser Chrome]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-21T06:40:46 IST" name="Default suite" finished-at="2022-10-21T06:40:46 IST" duration-ms="49">
+  <suite started-at="2022-10-21T06:49:53 IST" name="Default suite" finished-at="2022-10-21T06:49:53 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2022-10-21T06:40:46 IST" name="Default test" finished-at="2022-10-21T06:40:46 IST" duration-ms="49">
+    <test started-at="2022-10-21T06:49:53 IST" name="Default test" finished-at="2022-10-21T06:49:53 IST" duration-ms="90">
       <class name="base_test_Module.Login_Page_Validation">
-        <test-method is-config="true" signature="Initial_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:40:46 IST" name="Initial_Activity" finished-at="2022-10-21T06:40:46 IST" duration-ms="5" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method is-config="true" signature="Initial_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:49:53 IST" name="Initial_Activity" finished-at="2022-10-21T06:49:53 IST" duration-ms="51" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)]]>
+              <![CDATA[The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -48,22 +55,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
+            <line>
+              <![CDATA[Launching Browser Chrome]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Initial_Activity -->
-        <test-method signature="Amazon_Welcome_Text_validation()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:40:46 IST" name="Amazon_Welcome_Text_validation" finished-at="2022-10-21T06:40:46 IST" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="Amazon_Welcome_Text_validation()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:49:53 IST" name="Amazon_Welcome_Text_validation" finished-at="2022-10-21T06:49:53 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)]]>
+              <![CDATA[The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -93,11 +107,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Amazon_Welcome_Text_validation -->
-        <test-method is-config="true" signature="Terminate_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:40:46 IST" name="Terminate_Activity" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666314646316" status="SKIP">
+        <test-method is-config="true" signature="Terminate_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@37654521]" started-at="2022-10-21T06:49:53 IST" name="Terminate_Activity" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666315193102" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Terminate_Activity -->

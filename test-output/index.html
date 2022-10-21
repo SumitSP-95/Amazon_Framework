@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sumit pawankar\AppData\Local\Temp\testng-eclipse-1940680118\testng-customsuite.xml</span>
+                    <span>C:\Users\Sumit pawankar\AppData\Local\Temp\testng-eclipse-40341238\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,12 +130,16 @@
                   <a name="Amazon_Welcome_Text_validation">
                   </a> <!-- Amazon_Welcome_Text_validation -->
                   <span class="method-name">Amazon_Welcome_Text_validation</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+                  <div class="stack-trace">java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -172,7 +176,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sumit pawankar\AppData\Local\Temp\testng-eclipse-1940680118\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sumit pawankar\AppData\Local\Temp\testng-eclipse-40341238\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -265,11 +269,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Amazon_Welcome_Text_validation</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Terminate_Activity</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">71 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

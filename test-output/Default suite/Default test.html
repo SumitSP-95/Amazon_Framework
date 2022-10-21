@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 21 06:40:46 IST 2022</td>
+<td>Started on:</td><td>Fri Oct 21 06:49:53 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (49 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (90 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='base_test_Module.Login_Page_Validation.Initial_Activity()'><b>Initial_Activity</b><br>Test class: base_test_Module.Login_Page_Validation</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+<td title='base_test_Module.Login_Page_Validation.Initial_Activity()'><b>Initial_Activity</b><br>Test class: base_test_Module.Login_Page_Validation<br/>
+<a href="#Output-760357227" onClick='toggleBox("Output-760357227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-760357227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-760357227">
+Launching Browser Chrome<br/>
+</div>
+</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -110,12 +121,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div><a href='#' onClick='toggleBox("stack-trace760357227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace760357227'><pre>java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+<div class='stack-trace' id='stack-trace760357227'><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -157,7 +172,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='base_test_Module.Login_Page_Validation.Terminate_Activity()'><b>Terminate_Activity</b><br>Test class: base_test_Module.Login_Page_Validation</td>
 <td></td>
-<td>-1666314646</td>
+<td>-1666315193</td>
 <td>base_test_Module.Login_Page_Validation@37654521</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -169,12 +184,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='base_test_Module.Login_Page_Validation.Amazon_Welcome_Text_validation()'><b>Amazon_Welcome_Text_validation</b><br>Test class: base_test_Module.Login_Page_Validation</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -202,13 +221,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1961002599'><pre>java.io.FileNotFoundException: C:\Users\user\git\Amazon_Framewor\src\test\resources\Property_File_Only\Property_Amazon.properties (The system cannot find the path specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
-	at base_utility_Module.Base_class.getpropertyvalue(Base_class.java:35)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1048098469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048098469'><pre>java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Tools\Drivers\chromedriver_win32 (1)\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base_utility_Module.Base_class.Launch_Browser(Base_class.java:46)
 	at base_test_Module.Login_Page_Validation.Initial_Activity(Login_Page_Validation.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

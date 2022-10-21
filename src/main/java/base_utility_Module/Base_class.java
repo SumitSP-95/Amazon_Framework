@@ -52,7 +52,7 @@ public class Base_class {
 			Reporter.log("No browser found with given name = "+Browser_Name,true);
 		}
 		driver.manage().window().maximize();
-		driver.get(getpropertyvalue("URl"));
+		driver.get(getpropertyvalue("URL"));
 
 	}
 	public static void Quite_Browser() throws InterruptedException {
