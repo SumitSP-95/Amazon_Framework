@@ -32,7 +32,7 @@ public class Base_class {
 		
 		properties = new Properties();
 		
-		FileInputStream file = new FileInputStream("C:\\Users\\user\\git\\Amazon_Framewor\\src\\test\\resources\\Property_File_Only\\Property_Amazon.properties");
+		FileInputStream file = new FileInputStream("C:\\Users\\Sumit pawankar\\eclipse-workspace\\Automation_Git_Maven_Framework\\src\\test\\resources\\Property_File_Only\\Property_Amazon.properties");
 		
 		properties.load(file);
 		
@@ -52,7 +52,7 @@ public class Base_class {
 			Reporter.log("No browser found with given name = "+Browser_Name,true);
 		}
 		driver.manage().window().maximize();
-		driver.get(getpropertyvalue("URL"));
+		driver.get(getpropertyvalue("URl"));
 
 	}
 	public static void Quite_Browser() throws InterruptedException {
