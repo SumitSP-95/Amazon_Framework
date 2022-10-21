@@ -18,8 +18,8 @@ import org.openqa.selenium.io.FileHandler;
 public class Utility_class {
 	WebDriver ul_driver;
 
-	public Utility_class(WebDriver driver) {
-		ul_driver = driver;
+	public Utility_class(WebDriver _driver) {
+		ul_driver = _driver;
 	}
 
 	public String Get_Excel_Data(int Row_Ind, int Cell_ind) throws EncryptedDocumentException, IOException {
@@ -35,17 +35,16 @@ public class Utility_class {
 		} catch (Exception e) {
 			return (int) cell.getNumericCellValue() + "";
 		}
-		
+	}
 		public void Take_Screen_Shot(String TC_Name) throws IOException {
 			
-
 			Date d = new Date();
 			SimpleDateFormat DF = new SimpleDateFormat("_mm_ss_hh_dd_MM_yyyy");
 			String FormatedDate = DF.format(d);
 			
-			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			File src = ((TakesScreenshot)ul_driver).getScreenshotAs(OutputType.FILE);
 			File dest = new File("C:\\Users\\DELL\\Desktop"+TC_Name+FormatedDate+".png");
 			FileHandler.copy(src, dest);
         }
-	}
+	
 }

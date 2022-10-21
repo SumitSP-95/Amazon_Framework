@@ -8,10 +8,11 @@ import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import base_utility_Module.Base_class;
 
+@Listeners(base_utility_Module.Listener.class)
 public class Login_Page_Validation extends Base_class {
 
 	@BeforeClass
