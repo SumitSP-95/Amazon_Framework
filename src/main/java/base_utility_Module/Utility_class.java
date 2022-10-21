@@ -24,9 +24,9 @@ public class Utility_class {
 
 	public String Get_Excel_Data(int Row_Ind, int Cell_ind) throws EncryptedDocumentException, IOException {
 
-		FileInputStream File = new FileInputStream("C:\\Users\\Gopal\\Desktop\\Excle1\\Gopal.xlsx");
+		FileInputStream File = new FileInputStream("C:\\Automation tools\\Excel_sheet");
 
-		Sheet sheet = WorkbookFactory.create(File).getSheet("Amazon");
+		Sheet sheet = WorkbookFactory.create(File).getSheet("AMAZON");
 
 		Cell cell = sheet.getRow(Row_Ind).getCell(Cell_ind);
 

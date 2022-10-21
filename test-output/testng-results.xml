@@ -8,41 +8,41 @@
       <![CDATA[On test failure Block running]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-21T13:30:25 IST" name="Default suite" finished-at="2022-10-21T13:30:55 IST" duration-ms="30078">
+  <suite started-at="2022-10-21T13:54:47 IST" name="Default suite" finished-at="2022-10-21T13:55:35 IST" duration-ms="48716">
     <groups>
     </groups>
-    <test started-at="2022-10-21T13:30:25 IST" name="Default test" finished-at="2022-10-21T13:30:55 IST" duration-ms="30078">
+    <test started-at="2022-10-21T13:54:47 IST" name="Default test" finished-at="2022-10-21T13:55:35 IST" duration-ms="48716">
       <class name="base_test_Module.Login_Page_Validation">
-        <test-method is-config="true" signature="Initial_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:30:25 IST" name="Initial_Activity" finished-at="2022-10-21T13:30:45 IST" duration-ms="20268" status="PASS">
+        <test-method is-config="true" signature="Initial_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:54:47 IST" name="Initial_Activity" finished-at="2022-10-21T13:55:26 IST" duration-ms="38933" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching Browser Chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- Initial_Activity -->
-        <test-method signature="Amazon_Welcome_Text_validation()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:30:45 IST" name="Amazon_Welcome_Text_validation" finished-at="2022-10-21T13:30:45 IST" duration-ms="116" status="FAIL">
+        <test-method signature="Amazon_Welcome_Text_validation()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:55:26 IST" name="Amazon_Welcome_Text_validation" finished-at="2022-10-21T13:55:26 IST" duration-ms="45" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"partial link text","selector":"Your Amazon Cart is empty"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'Your Amazon Cart is empty')]"}
   (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SUMIT', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUMITP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 061f6000b8705fe8db591b167b2bee9b
-*** Element info: {Using=partial link text, value=Your Amazon Cart is empty}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUMITP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e375c024709aa7a9bd0b1a9a12d52c27
+*** Element info: {Using=xpath, value=//h2[contains(text(),'Your Amazon Cart is empty')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"Your Amazon Cart is empty"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'Your Amazon Cart is empty')]"}
   (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SUMIT', ip: '192.168.43.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUMITP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51401}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 061f6000b8705fe8db591b167b2bee9b
-*** Element info: {Using=partial link text, value=Your Amazon Cart is empty}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUMITP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e375c024709aa7a9bd0b1a9a12d52c27
+*** Element info: {Using=xpath, value=//h2[contains(text(),'Your Amazon Cart is empty')]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,13 +54,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
-at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.getText(Unknown Source)
-at Base_pom_Module.Amazon_Login_Page.Amazon_Cart_Empty_TextAquire(Amazon_Login_Page.java:34)
+at Base_pom_Module.Amazon_Login_Page.Amazon_Cart_Empty_TextAquire(Amazon_Login_Page.java:31)
 at base_test_Module.Login_Page_Validation.Amazon_Welcome_Text_validation(Login_Page_Validation.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -99,7 +99,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- Amazon_Welcome_Text_validation -->
-        <test-method is-config="true" signature="Terminate_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:30:45 IST" name="Terminate_Activity" finished-at="2022-10-21T13:30:55 IST" duration-ms="9660" status="PASS">
+        <test-method is-config="true" signature="Terminate_Activity()[pri:0, instance:base_test_Module.Login_Page_Validation@4de4b452]" started-at="2022-10-21T13:55:26 IST" name="Terminate_Activity" finished-at="2022-10-21T13:55:35 IST" duration-ms="9699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Terminate_Activity -->
