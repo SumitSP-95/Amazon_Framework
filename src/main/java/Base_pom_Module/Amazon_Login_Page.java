@@ -13,14 +13,16 @@ public class Amazon_Login_Page {
 
 		PageFactory.initElements(_driver, this);
 	}
+	
+	// in order
 
-	@FindBy(xpath = "//span[@id='nav-cart-count']")
+	@FindBy(xpath = "//span[text()='& Orders']")
 	private WebElement Cart_Button_Tab;
 
-	@FindBy(xpath = "//h2[contains(text(),'Your Amazon Cart is empty')]")
+	@FindBy(xpath = "//h1[contains(text(),'Sign in')]")
 	private WebElement Amazon_Cart_Empty_TextAquire;
 
-	@FindBy(xpath = "//span[contains(text(),'Sign in to your')]")
+	@FindBy(xpath = "//input[@id='ap_email']")
 	private WebElement Sign_up_now_PageOpen;
 
 	public void Cart_PageFind() {

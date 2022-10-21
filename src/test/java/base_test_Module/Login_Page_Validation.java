@@ -20,13 +20,20 @@ public class Login_Page_Validation extends Base_class {
 		Launch_Browser(getpropertyvalue("BN"));
 		Initialize();
 	}
-	@Test
+	//@Test
 	public void Amazon_Welcome_Text_validation() throws InterruptedException, EncryptedDocumentException, IOException {
 		String Actual = amazon_login_page.Amazon_Cart_Empty_TextAquire();
 		Static_wait(3);
 		String Expecte = utility_class.Get_Excel_Data(0, 0);
 		Assert.assertEquals(Actual, Expecte);
 	}
+	@Test
+	public void Amazon_Order() {
+		
+		amazon_login_page.Cart_PageFind();
+		amazon_login_page.SignUpPage();
+	}
+	
 	@AfterClass
 	public void Terminate_Activity() throws InterruptedException {
 		Static_wait(4);

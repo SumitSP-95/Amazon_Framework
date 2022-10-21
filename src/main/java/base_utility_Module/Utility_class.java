@@ -24,7 +24,7 @@ public class Utility_class {
 
 	public String Get_Excel_Data(int Row_Ind, int Cell_ind) throws EncryptedDocumentException, IOException {
 
-		FileInputStream File = new FileInputStream("C:\\Automation tools\\Excel_sheet");
+		FileInputStream File = new FileInputStream("C:\\Automation tools\\Excel_sheet\\Excel_study.xlsx");
 
 		Sheet sheet = WorkbookFactory.create(File).getSheet("AMAZON");
 
