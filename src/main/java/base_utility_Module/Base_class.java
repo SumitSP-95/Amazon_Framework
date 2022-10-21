@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
+import org.testng.asserts.SoftAssert;
 
 import Base_pom_Module.Amazon_Login_Page;
 
@@ -17,12 +18,15 @@ public class Base_class {
 	
 	public static WebDriver driver;
 	public static Amazon_Login_Page amazon_login_page;
+	public static Utility_class utility_class;
+	public static SoftAssert softassert();
 	
 	
 	public static void Initialize() {
 		
 		amazon_login_page = new Amazon_Login_Page(driver);
-		
+		utility_class = new Utility_class(driver);
+		softassert = new 
 	}
 	
 	
