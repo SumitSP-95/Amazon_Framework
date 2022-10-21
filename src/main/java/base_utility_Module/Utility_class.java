@@ -1,13 +1,19 @@
 package base_utility_Module;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.hpsf.Date;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 
 public class Utility_class {
 	WebDriver ul_driver;
@@ -29,5 +35,17 @@ public class Utility_class {
 		} catch (Exception e) {
 			return (int) cell.getNumericCellValue() + "";
 		}
+		
+		public void Take_Screen_Shot(String TC_Name) throws IOException {
+			
+
+			Date d = new Date();
+			SimpleDateFormat DF = new SimpleDateFormat("_mm_ss_hh_dd_MM_yyyy");
+			String FormatedDate = DF.format(d);
+			
+			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			File dest = new File("C:\\Users\\DELL\\Desktop"+TC_Name+FormatedDate+".png");
+			FileHandler.copy(src, dest);
+        }
 	}
 }
