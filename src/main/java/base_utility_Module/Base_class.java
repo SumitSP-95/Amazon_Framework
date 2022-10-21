@@ -12,24 +12,20 @@ import org.testng.asserts.SoftAssert;
 
 import Base_pom_Module.Amazon_Login_Page;
 
-
-
 public class Base_class {
 	
 	public static WebDriver driver;
 	public static Amazon_Login_Page amazon_login_page;
+	public static SoftAssert softassert;
 	public static Utility_class utility_class;
-	public static SoftAssert softassert();
 	
 	
 	public static void Initialize() {
-		
 		amazon_login_page = new Amazon_Login_Page(driver);
+		softassert = new SoftAssert();
 		utility_class = new Utility_class(driver);
-		softassert = new 
+		
 	}
-	
-	
 	public static Properties properties;
 	
 	public static String getpropertyvalue(String key) throws IOException {
